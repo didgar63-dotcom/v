@@ -2,9 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
+  // Move appDir to top-level for Next.js 14+
+  appDir: true,
   images: {
     domains: ['localhost', 'vercel.app'],
   },
